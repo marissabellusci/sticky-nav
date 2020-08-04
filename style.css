@@ -28,7 +28,7 @@ html {
   header {
     text-align: center;
     height: 50vh;
-    background: url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat;
+    background: url(#) bottom center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -36,7 +36,7 @@ html {
   }
   
   h1 {
-    color: white;
+    color: black;
     font-size: 7vw;
     text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
   }
@@ -50,6 +50,12 @@ html {
     z-index: 1;
   }
   
+  .fixed-nav nav {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
   nav ul {
     margin: 0;
     padding:0;
@@ -73,6 +79,11 @@ html {
     font-weight: 600;
     font-size: 30px;
   }
+
+  .fixed-nav li.logo {
+      max-width: 500px;
+
+  }
   
   li.logo a {
     color: black;
@@ -86,3 +97,4 @@ html {
     transition: all 0.2s;
     text-transform: uppercase;
   }
+
